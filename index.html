@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="sv"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Foretagslistor.se | One.com Partner Förslag</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1392ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101a22",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .snap-container {
+            height: 100vh;
+            overflow-y: auto;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+        .snap-section {
+            height: 100vh;
+            width: 100%;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .snap-container::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .snap-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        /* Print/Export specific styles */
+        @media print {
+            .snap-container {
+                height: auto;
+                overflow: visible;
+                scroll-snap-type: none;
+            }
+            .snap-section {
+                height: auto;
+                min-height: 100vh;
+                page-break-after: always;
+                scroll-snap-align: none;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
+<div class="snap-container" id="main-container">
+<!-- Slide 1: Hero Section -->
+<section class="snap-section relative">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-slate-900/60 z-10"></div>
+<div class="w-full h-full bg-no-repeat bg-center" data-alt="Modern minimalist Scandinavian office with Stockholm skyline view" style="background-image: url('images/1.png'); background-size: 100% auto;"></div>
+</div>
+<header class="relative z-20 flex items-center justify-between px-8 py-6 lg:px-20">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-4xl">corporate_fare</span>
+<h2 class="text-white text-xl font-bold tracking-tight">Foretagslistor.se</h2>
+</div>
+<div class="hidden md:flex gap-8 text-white/90 font-medium">
+<a class="hover:text-primary" href="#marknaden">Marknaden</a>
+<a class="hover:text-primary" href="#varfor">Varför One.com</a>
+<a class="hover:text-primary" href="#forslag">Förslag</a>
+</div>
+</header>
+<div class="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-6 max-w-5xl mx-auto">
+<h1 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tight mb-6">
+                    Nå nya bolag innan de väljer sin <span class="text-primary">digitala grund</span>
+</h1>
+<p class="text-white/80 text-lg md:text-2xl font-light max-w-3xl mb-10">
+                    Foretagslistor.se ger One.com en tidig och relevant väg till nyregistrerade företag i Sverige.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg shadow-lg shadow-primary/20 hover:scale-105 transition-transform">Utforska möjligheten</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all">Läs mer</button>
+</div>
+</div>
+<footer class="relative z-20 w-full px-8 py-8 lg:px-20 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-white/60 text-sm">
+<div>Coastworks Solutions AB | Nicholas Sahlberg &amp; Jonas Rydqvist</div>
+<div class="flex items-center gap-2 mt-2 md:mt-0">
+<span class="material-symbols-outlined text-sm">keyboard_double_arrow_down</span>
+                    Scrolla för att börja
+                </div>
+</footer>
+</section>
+<!-- Slide 2: Marknaden -->
+<section class="snap-section bg-white dark:bg-background-dark relative" id="marknaden">
+<div class="flex h-full flex-col lg:flex-row">
+<div class="w-full lg:w-1/2 flex flex-col justify-center p-8 lg:p-20">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Marknaden</span>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-6">Ett stort och tidigt beslutsfönster</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-12">Varje månad registreras cirka 6 700 nya bolag i Sverige. Av dessa bedömer vi att cirka 3 500–4 000 bolag per månad är realistiskt kontaktbara efter urval. Det innebär en tydlig möjlighet att nå företagare mycket tidigt i processen — innan de hunnit välja leverantörer för exempelvis domän, företagsmail, hemsida och digital närvaro.</p>
+<div class="grid grid-cols-2 gap-8 border-t border-slate-100 dark:border-slate-800 pt-8">
+<div>
+<p class="text-3xl font-black text-primary">6 700</p>
+<p class="text-slate-500 text-sm">Nya bolag / månad</p>
+</div>
+<div>
+<p class="text-3xl font-black text-primary">3500-4000</p>
+<p class="text-slate-500 text-sm">Kontaktbar volym</p>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative bg-slate-50 dark:bg-slate-900/20">
+<div class="absolute inset-0 flex items-center justify-center p-12">
+<div class="w-full h-full rounded-2xl overflow-hidden shadow-2xl bg-white dark:bg-slate-800 p-4 border border-slate-100 dark:border-slate-700">
+<div class="w-full h-full bg-cover bg-center rounded-lg" data-alt="Modern professional office environment with business growth indicators" data-location="Sweden" style="background-image: url('./images/2.png');"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Slide 3: Varför One.com -->
+<section class="snap-section bg-slate-50 dark:bg-slate-900 relative" id="varfor">
+<div class="flex h-full flex-col lg:flex-row-reverse">
+<div class="w-full lg:w-1/2 flex flex-col justify-center p-8 lg:p-20">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Varför One.com</span>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-6">Varför One.com är en relevant partner</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">För många nya bolag uppstår behovet av en digital grund direkt efter registrering. De behöver ofta snabbt komma igång med: domän, professionell e-post, hemsida eller landningssida, ibland även webshop eller enklare digital närvaro. One.com är därför en naturlig partner i det här skedet, eftersom erbjudandet matchar flera av de första praktiska besluten som nya företag behöver ta.</p>
+</div>
+<div class="w-full lg:w-1/2 relative">
+<div class="absolute inset-0 bg-no-repeat bg-center" data-alt="High-end laptop displaying modern web design work" style="background-image: url('./images/3.png'); background-size: contain;"></div>
+</div>
+</div>
+</section>
+<!-- Slide 4: Varför timing spelar roll -->
+<section class="snap-section bg-white dark:bg-background-dark overflow-hidden relative">
+<div class="container mx-auto h-full flex flex-col items-center justify-center px-6 lg:px-20 relative">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Timing</span>
+<h2 class="text-4xl lg:text-6xl font-black text-slate-900 dark:text-white mb-8">Timing gör stor skillnad</h2>
+<div class="prose prose-lg dark:prose-invert"><p class="text-slate-600 dark:text-slate-400 text-xl leading-relaxed mb-6">
+    När ett bolag precis har registrerats befinner sig företagaren ofta i ett aktivt uppstartsskede. Det är då flera grundläggande val görs för första gången: hur bolaget ska synas online, vilken domän som ska säkras, hur företagsmail ska sättas upp, vilken första webbplattform man ska använda.
+</p>
+<p class="text-slate-600 dark:text-slate-400 text-xl leading-relaxed">
+    När vi når bolaget tidigt ökar chansen att partnern blir ett förstaval, innan vanor och leverantörsbeslut hunnit sätta sig.
+</p></div>
+</div>
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-2xl border border-slate-100 dark:border-slate-700">
+<div class="aspect-square bg-cover bg-center rounded-xl mb-6" data-alt="Person marking an important date on a minimalist desk calendar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDR27MPwKnVXDh24AeBuGo0qHhTVDJF4vw4iGxG36Jh1uNp2LlcnA-z1UFcok3V8LGzijruyONFOJz8Os28lnvff7qL8rI4ds5dS58i3fAMr6RJaz87440j_tBsPD71VowebyryMJIIkP-8l4HlNlq8SITc3wMcz-38ldMCpdMvWfg19oa7zmgth8-GcpoagSmTKEhqd2u4ZkG3DH_szmx5V3bJAl9R71cZ2nV9IfvzdCU3Jza3ikvPR9GiHYHRfBCxNViEdNhRQ6dB');"></div>
+<div class="flex items-center gap-4 text-primary font-bold">
+<span class="material-symbols-outlined">schedule</span>
+<span>Det optimala fönstret: Dag 1-14</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Slide 5: Så fungerar upplägget -->
+<section class="snap-section bg-slate-900 text-white relative">
+<div class="flex h-full flex-col lg:flex-row">
+<div class="w-full lg:w-1/2 flex flex-col justify-center p-8 lg:p-20 order-2 lg:order-1">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Metodik</span>
+<h2 class="text-4xl lg:text-5xl font-black mb-10">Så fungerar pilotupplägget</h2>
+<div class="space-y-4">
+<p class="text-slate-300 text-lg leading-relaxed">
+    Foretagslistor.se identifierar nya bolag löpande och skapar ett relevant välkomstupplägg med ett fåtal utvalda partners inom respektive kategori. För One.com innebär det:
+</p>
+<ul class="space-y-4 text-lg text-slate-300">
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">check_circle</span> <span>Tydlig placering inom kategorin digital närvaro / webb / domän</span></li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">check_circle</span> <span>Exponering mot nyregistrerade bolag i tidigt skede</span></li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">check_circle</span> <span>Trafik till spårbar destination eller landningssida</span></li>
+<li class="flex items-center gap-4"><span class="material-symbols-outlined text-primary">check_circle</span> <span>Möjlighet att testa budskap och erbjudande i pilotformat</span></li>
+</ul>
+</div>
+<div class="mt-12 p-6 bg-white/5 border border-white/10 rounded-xl">
+<p class="text-primary font-bold mb-2">Automatisering</p>
+<p class="text-sm">Fokus ligger på relevans, enkelhet och tydlig mätbarhet.</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2 relative order-1 lg:order-2">
+<div class="absolute inset-0 bg-cover bg-center opacity-70" data-alt="Two professionals shaking hands in a high-tech office environment" style="background-image: url('./images/5.png');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-slate-900 via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Slide 6: Vad vi föreslår -->
+<section class="snap-section bg-background-light dark:bg-background-dark relative" id="forslag">
+<div class="container mx-auto h-full flex flex-col items-center justify-center px-6 text-center">
+<div class="max-w-4xl">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Vårt Förslag</span>
+<h2 class="text-4xl lg:text-6xl font-black mb-8 text-slate-900 dark:text-white">Vårt förslag till första pilot</h2>
+<p class="text-slate-600 dark:text-slate-400 text-xl mb-12 max-w-2xl mx-auto">Vi ser framför oss en enkel pilot under 3 månader där vi tillsammans testar: kategori-fit, budskap, erbjudande, trafik och respons, potential för vidare samarbete. Under pilotfasen föreslår vi ett fast upplägg, så att vi kan fokusera på faktisk effekt och lärande innan en eventuell långsiktig modell sätts.</p>
+<div class="grid md:grid-cols-3 gap-6 mb-16">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">speed</span>
+<h4 class="font-bold text-lg mb-2">Snabbstart</h4>
+<p class="text-slate-500 text-sm">Igång på under 48 timmar</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl border-2 border-primary">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">analytics</span>
+<h4 class="font-bold text-lg mb-2">Utvärdering</h4>
+<p class="text-slate-500 text-sm">Månatlig uppföljning av KPIer</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-xl">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">rocket_launch</span>
+<h4 class="font-bold text-lg mb-2">Skalbarhet</h4>
+<p class="text-slate-500 text-sm">Möjlighet att expandera volym</p>
+</div>
+</div>
+<div class="w-full max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl h-64">
+<div class="w-full h-full bg-no-repeat bg-center" data-alt="A growth chart showing upward trends in business metrics" style="background-image: url('./images/6.png'); background-size: 100% 100%;"></div>
+</div><p class="text-slate-500 text-sm mt-8">Efter piloten kan modellen utvecklas vidare till fast eller hybrid beroende på utfall.</p>
+</div>
+</div>
+</section>
+<!-- Slide 7: Vad vi vill diskutera idag -->
+<section class="snap-section bg-white dark:bg-slate-900 relative">
+<div class="flex h-full flex-col lg:flex-row">
+<div class="w-full lg:w-1/2 relative">
+<div class="absolute inset-0 bg-center" data-alt="People collaborating in a modern sunlit meeting room" style="background-image: url('./images/7.png');"></div>
+</div>
+<div class="w-full lg:w-1/2 flex flex-col justify-center p-8 lg:p-20"><p class="text-slate-600 dark:text-slate-400 mb-8">Vi vill gärna förstå hur One.com ser på målgruppen nyregistrerade bolag och om denna kanal känns relevant att testa. Det vi gärna diskuterar idag är:</p>
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Agenda</span>
+<h2 class="text-4xl lg:text-5xl font-black text-slate-900 dark:text-white mb-8">Vad vi gärna vill landa i efter dagens möte</h2>
+<div class="space-y-4"><div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl flex items-center gap-4 hover:translate-x-2 transition-transform">
+<span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">1</span>
+<p class="font-medium">Hur ni ser på nyföretagarsegmentet</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl flex items-center gap-4 hover:translate-x-2 transition-transform">
+<span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">2</span>
+<p class="font-medium">Vilket erbjudande som skulle vara mest attraktivt i ett tidigt skede</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl flex items-center gap-4 hover:translate-x-2 transition-transform">
+<span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
+<p class="font-medium">Hur ni helst vill mäta en pilot</p>
+</div>
+<div class="p-6 bg-slate-50 dark:bg-slate-800 rounded-xl flex items-center gap-4 hover:translate-x-2 transition-transform">
+<span class="bg-primary text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">4</span>
+<p class="font-medium">Om det finns grund för att gå vidare med ett första test</p>
+</div></div>
+<p class="text-slate-500 text-sm mt-8">Målet är inte att låsa allt idag, utan att se om det finns tydlig grund för en pilot tillsammans.</p></div>
+</div>
+</section>
+<!-- Slide 8: Avslutning / CTA -->
+<section class="snap-section bg-primary text-white relative">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center opacity-50" style="background-image: url('./images/8.png');"></div>
+</div>
+<div class="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
+<h2 class="text-5xl md:text-7xl font-black mb-8">Nästa steg</h2>
+<div class="grid md:grid-cols-2 gap-8 text-left mb-16 w-full">
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20"><h4 class="font-bold text-2xl mb-4">Nästa steg</h4>
+<p class="text-white/80 mb-4">Om intresse finns föreslår vi att nästa steg blir ett gemensamt arbetsmöte där vi sätter:</p>
+<ul class="space-y-3">
+<li class="flex gap-3"><span class="material-symbols-outlined text-white">arrow_forward</span> Pilotupplägg</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-white">arrow_forward</span> Erbjudande</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-white">arrow_forward</span> Spårning / landningssida</li>
+<li class="flex gap-3"><span class="material-symbols-outlined text-white">arrow_forward</span> KPI:er &amp; tidsplan</li>
+</ul></div>
+<div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20">
+<h4 class="font-bold text-2xl mb-4">Kontakt</h4>
+<p class="mb-1 text-white text-lg font-medium">Nicholas Sahlberg & Jonas Rydqvist</p>
+<p class="text-white/80 border-b border-white/10 pb-4 mb-4">Coastworks Solutions AB</p>
+<p class="text-white hover:text-white/80 transition-colors">info@coastworks.se</p>
+<p class="text-white hover:text-white/80 transition-colors">www.foretagslistor.se</p>
+</div>
+</div>
+<button class="bg-white text-primary px-12 py-5 rounded-full font-black text-xl shadow-2xl hover:bg-slate-100 hover:scale-105 transition-all">
+                    Ladda ner förslaget (PDF)
+                </button>
+</div>
+<footer class="relative z-10 w-full py-8 text-center text-white/60 text-sm border-t border-white/10">Tack! Nicholas Sahlberg, Coastworks Solutions AB, foretagslistor.se</footer>
+</section>
+</div>
+</body></html>
