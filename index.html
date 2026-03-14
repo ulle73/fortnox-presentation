@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -78,6 +79,317 @@
                 scroll-snap-align: none;
             }
         }
+        /* Email Slide Styles */
+        .email-slide {
+            height: auto !important;
+            min-height: 100vh;
+            background: #E8ECF5;
+            font-family: 'DM Sans', sans-serif;
+            padding: 80px 20px;
+        }
+        .email-slide * { box-sizing: border-box; }
+        .email-slide .email-client {
+            max-width: 680px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04), 0 20px 60px rgba(45,91,227,0.10);
+            text-align: left;
+        }
+        .email-slide .client-bar {
+            background: #F1F3F8;
+            padding: 12px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid #E2E8F0;
+        }
+        .email-slide .dots { display:flex; gap:6px; }
+        .email-slide .dot { width:12px; height:12px; border-radius:50%; }
+        .email-slide .dot-r { background:#FF5F57; }
+        .email-slide .dot-y { background:#FFBD2E; }
+        .email-slide .dot-g { background:#28C840; }
+        .email-slide .subject-bar {
+            flex:1;
+            background:#fff;
+            border:1px solid #DDE3EF;
+            border-radius:6px;
+            padding: 6px 12px;
+            font-size:13px;
+            color:#64748B;
+            display:flex;
+            align-items:center;
+            gap:8px;
+        }
+        .email-slide .subject-bar strong { color:#0D1B2A; }
+        .email-slide .email-body { background: #fff; }
+        .email-slide .email-header {
+            background: linear-gradient(135deg, #0D1B2A 0%, #1a2f4a 100%);
+            padding: 32px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .email-slide .logo {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: -0.3px;
+        }
+        .email-slide .logo span { color: #2D5BE3; }
+        .email-slide .header-badge {
+            background: rgba(45,91,227,0.15);
+            border: 1px solid rgba(45,91,227,0.3);
+            color: #7BA3F5;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .email-slide .hero-email {
+            padding: 40px 40px 32px;
+            border-bottom: 1px solid #F1F5F9;
+        }
+        .email-slide .emoji-big { font-size: 36px; margin-bottom: 12px; display:block; }
+        .email-slide .hero-email h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 28px;
+            color: #0D1B2A;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.5px;
+        }
+        .email-slide .hero-email h1 em {
+            font-style: normal;
+            color: #2D5BE3;
+        }
+        .email-slide .hero-email p {
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.65;
+            max-width: 520px;
+        }
+        .email-slide .checklist {
+            padding: 28px 40px;
+            background: #F8FAFF;
+            border-bottom: 1px solid #E8EFF8;
+        }
+        .email-slide .checklist-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #94A3B8;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        .email-slide .check-items { display: flex; flex-direction: column; gap: 10px; }
+        .email-slide .check-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+            color: #334155;
+            font-weight: 500;
+        }
+        .email-slide .check-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #2D5BE3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 11px;
+            color: white;
+            font-weight: 700;
+        }
+        .email-slide .check-free {
+            margin-left: auto;
+            font-size: 11px;
+            color: #94A3B8;
+            font-weight: 400;
+        }
+        .email-slide .partners-email { padding: 32px 40px; }
+        .email-slide .partners-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #94A3B8;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .email-slide .partner-card {
+            border: 1.5px solid #E8EFF8;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            transition: border-color 0.2s;
+        }
+        .email-slide .partner-card:last-child { margin-bottom: 0; }
+        .email-slide .partner-card.featured {
+            border-color: #2D5BE3;
+            box-shadow: 0 0 0 4px rgba(45,91,227,0.06);
+        }
+        .email-slide .partner-top {
+            padding: 18px 20px 16px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .email-slide .partner-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        .email-slide .partner-info { flex: 1; }
+        .email-slide .partner-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-bottom: 6px;
+        }
+        .email-slide .badge-primary {
+            background: #EEF2FD;
+            color: #2D5BE3;
+        }
+        .email-slide .badge-secondary {
+            background: #F0FDF4;
+            color: #16A34A;
+        }
+        .email-slide .badge-tertiary {
+            background: #FFF7ED;
+            color: #EA580C;
+        }
+        .email-slide .partner-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0D1B2A;
+            margin-bottom: 4px;
+        }
+        .email-slide .partner-desc {
+            font-size: 13px;
+            color: #64748B;
+            line-height: 1.5;
+        }
+        .email-slide .partner-offer {
+            background: #F8FAFF;
+            border-top: 1px solid #E8EFF8;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .email-slide .partner-card.featured .partner-offer {
+            background: #EEF2FD;
+            border-top-color: #C7D4F8;
+        }
+        .email-slide .offer-text {
+            font-size: 13px;
+            color: #334155;
+            font-weight: 500;
+        }
+        .email-slide .offer-text strong { color: #0D1B2A; }
+        .email-slide .cta-email-btn {
+            display: inline-block;
+            background: #2D5BE3;
+            color: white;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 18px;
+            border-radius: 7px;
+            text-decoration: none;
+            white-space: nowrap;
+            cursor: pointer;
+        }
+        .email-slide .cta-email-btn.secondary {
+            background: #0D1B2A;
+        }
+        .email-slide .cta-email-btn.tertiary {
+            background: #EA580C;
+        }
+        .email-slide .info-box {
+            margin: 0 40px 32px;
+            background: #F8FAFF;
+            border: 1px solid #E8EFF8;
+            border-left: 3px solid #2D5BE3;
+            border-radius: 0 8px 8px 0;
+            padding: 14px 18px;
+        }
+        .email-slide .info-box p {
+            font-size: 13px;
+            color: #475569;
+            line-height: 1.6;
+        }
+        .email-slide .info-box strong { color: #0D1B2A; }
+        .email-slide .email-footer {
+            background: #F8FAFF;
+            border-top: 1px solid #E8EFF8;
+            padding: 24px 40px;
+        }
+        .email-slide .footer-logo {
+            font-size: 13px;
+            font-weight: 700;
+            color: #0D1B2A;
+            margin-bottom: 6px;
+        }
+        .email-slide .footer-logo span { color: #2D5BE3; }
+        .email-slide .footer-text {
+            font-size: 12px;
+            color: #94A3B8;
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+        .email-slide .footer-links {
+            display: flex;
+            gap: 16px;
+        }
+        .email-slide .footer-links a {
+            font-size: 12px;
+            color: #94A3B8;
+            text-decoration: none;
+        }
+        .email-slide .footer-links a:hover { color: #2D5BE3; }
+        .email-slide .annotation {
+            max-width: 680px;
+            margin: 24px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .email-slide .ann-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-size: 12px;
+            color: #475569;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+        }
+        .email-slide .ann-dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .email-slide .ann-item strong { color: #0D1B2A; }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased">
@@ -212,6 +524,163 @@
 </div>
 </div>
 </div>
+</div>
+</section>
+<!-- Slide 7: Välkomstmejl -->
+<section class="snap-section email-slide">
+<!-- EMAIL CLIENT CHROME -->
+<div class="email-client">
+  <!-- Browser/client bar -->
+  <div class="client-bar">
+    <div class="dots">
+      <div class="dot dot-r"></div>
+      <div class="dot dot-y"></div>
+      <div class="dot dot-g"></div>
+    </div>
+    <div class="subject-bar">
+      <span>✉️</span>
+      <strong>Grattis till ditt nya bolag — dina första steg som företagare 🎉</strong>
+      <span style="margin-left:auto;color:#94A3B8;">från Företagslistor.se</span>
+    </div>
+  </div>
+  <div class="email-body">
+    <!-- Header -->
+    <div class="email-header">
+      <div class="logo">Företags<span>listor</span>.se</div>
+      <div class="header-badge">Nyregistrerat bolag</div>
+    </div>
+    <!-- Hero -->
+    <div class="hero-email">
+      <span class="emoji-big">🎉</span>
+      <h1>Välkommen som<br><em>företagare!</em></h1>
+      <p>
+        Grattis — du har precis tagit ett av de modigaste besluten du kan ta.
+        Vi har sammanställt de viktigaste stegen för att komma igång på rätt sätt,
+        direkt från dag ett.
+      </p>
+    </div>
+    <!-- Checklist -->
+    <div class="checklist">
+      <div class="checklist-title">Dag ett — detta behöver du ordna</div>
+      <div class="check-items">
+        <div class="check-item">
+          <div class="check-icon">1</div>
+          Ansök om F-skatt hos Skatteverket
+          <span class="check-free">Gratis · skatteverket.se</span>
+        </div>
+        <div class="check-item">
+          <div class="check-icon">2</div>
+          Sätt upp bokföring &amp; fakturering
+          <span class="check-free">Se nedan</span>
+        </div>
+        <div class="check-item">
+          <div class="check-icon">3</div>
+          Registrera din domän &amp; skaffa hemsida
+          <span class="check-free">Se nedan</span>
+        </div>
+        <div class="check-item">
+          <div class="check-icon">4</div>
+          Skriv ditt första kundavtal
+          <span class="check-free">Se nedan</span>
+        </div>
+      </div>
+    </div>
+    <!-- Partners -->
+    <div class="partners-email">
+      <div class="partners-title">Våra rekommenderade partners för nyföretagare</div>
+      <!-- Partner 1: One.com (featured) -->
+      <div class="partner-card featured">
+        <div class="partner-top">
+          <div class="partner-icon" style="background:white; border: 1px solid #E8EFF8;"><img src="https://s3-eu-west-1.amazonaws.com/tpd/logos/4fbf4777000064000515ae61/0x0.png" alt="One.com" style="width: 28px; height: 28px; object-fit: contain;"></div>
+          <div class="partner-info">
+            <div class="partner-badge badge-primary">Domän &amp; hemsida</div>
+            <div class="partner-name">One.com</div>
+            <div class="partner-desc">Registrera din .se-domän och bygg en professionell hemsida på några minuter. Enkelt, snabbt och prisvärt.</div>
+          </div>
+        </div>
+        <div class="partner-offer">
+          <div class="offer-text"><strong>Starterbjudande:</strong> Domän + webbhotell första året till halva priset</div>
+          <a class="cta-email-btn" href="#">Kom igång →</a>
+        </div>
+      </div>
+      <!-- Partner 2: Bokio -->
+      <div class="partner-card">
+        <div class="partner-top">
+          <div class="partner-icon" style="background:#EEF2FD;">📊</div>
+          <div class="partner-info">
+            <div class="partner-badge badge-secondary">⭐ Rekommenderas — Bokföring</div>
+            <div class="partner-name">Bokio</div>
+            <div class="partner-desc">Enkel bokföring och fakturering i mobilen. Perfekt för dig som precis startat — ingen förkunskap krävs.</div>
+          </div>
+        </div>
+        <div class="partner-offer">
+          <div class="offer-text"><strong>Exklusivt starterbjudande:</strong> 3 månader gratis — ingen bindningstid</div>
+          <a class="cta-email-btn secondary" href="#">Prova gratis →</a>
+        </div>
+      </div>
+      <!-- Partner 3: Juridio -->
+      <div class="partner-card">
+        <div class="partner-top">
+          <div class="partner-icon" style="background:#FFF7ED;">⚖️</div>
+          <div class="partner-info">
+            <div class="partner-badge badge-tertiary">Juridik &amp; avtal</div>
+            <div class="partner-name">Juridio</div>
+            <div class="partner-desc">Få ett professionellt kundavtal på plats innan du fakturerar din första kund. Skydda dig och ditt bolag från dag ett.</div>
+          </div>
+        </div>
+        <div class="partner-offer">
+          <div class="offer-text"><strong>Starterbjudande:</strong> Första avtalet helt gratis</div>
+          <a class="cta-email-btn tertiary" href="#">Hämta gratis avtal →</a>
+        </div>
+      </div>
+    </div>
+    <!-- Info box -->
+    <div class="info-box">
+      <p>
+        <strong>Varför fick du detta mejl?</strong> Vi hämtar veckovisa listor från
+        Bolagsverket över nyregistrerade bolag och skickar ett välkomstpaket till
+        grundare som angivit e-post. Vi samarbetar med ett <strong>fåtal noggrant
+        utvalda partners</strong> som erbjuder genuina starterbjudanden — ingen reklam,
+        bara verktyg som faktiskt hjälper dig igång.
+      </p>
+    </div>
+    <!-- Footer -->
+    <div class="email-footer">
+      <div class="footer-logo">Företags<span>listor</span>.se</div>
+      <div class="footer-text">
+        Företagslistor.se är en tjänst från Coastworks Solutions AB · Göteborg, Sverige<br>
+        Vi hjälper nystartade bolag att hitta rätt verktyg från dag ett.
+      </div>
+      <div class="footer-links">
+        <a href="#">Avregistrera</a>
+        <a href="#">foretagslistor.se</a>
+        <a href="#">info@coastworks.se</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Annotations -->
+<div class="annotation">
+  <div class="ann-item">
+    <div class="ann-dot" style="background:#2D5BE3"></div>
+    <span><strong>Ämnesrad</strong> — personlig och händelsestyrd. "Grattis" slår "Erbjudanden" med 2–3× i öppningsgrad.</span>
+  </div>
+  <div class="ann-item">
+    <div class="ann-dot" style="background:#16A34A"></div>
+    <span><strong>Checklista</strong> — redaktionellt innehåll utan partner. Bygger förtroende och gör mejlet värdefullt oavsett klick.</span>
+  </div>
+  <div class="ann-item">
+    <div class="ann-dot" style="background:#EA580C"></div>
+    <span><strong>Max 3 partners</strong> — en per kategori, exklusivt. Fler än så känns som reklam och sänker CTR.</span>
+  </div>
+  <div class="ann-item">
+    <div class="ann-dot" style="background:#7C3AED"></div>
+    <span><strong>Genuina starterbjudanden</strong> — partners måste erbjuda något verkligt generöst. Det är ett krav från oss.</span>
+  </div>
+  <div class="ann-item">
+    <div class="ann-dot" style="background:#94A3B8"></div>
+    <span><strong>Transparens i footer</strong> — förklarar varför de fick mejlet. Minskar spam-rapporter och bygger trovärdighet.</span>
+  </div>
 </div>
 </section>
 <!-- Slide 6: Så fungerar upplägget -->
